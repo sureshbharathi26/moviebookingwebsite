@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    min-height:100vh;
+    background:whitesmoke;
+    background-image: url("images/pexels-joshsorenson-1586144.jpg");
+    background-size: cover;
+}
+.anchortag{
+    background: #ccc;
+    width:86%;
+    position: absolute;
+    top: -0.02rem;
+}
+li{
+    padding: 15px;
+    display: inline-block;
+    list-style: none;
+    justify-content:space-between;
+}
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a{
+  font-family: "Teachers", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1;
+  font-style: normal;
+  transition-duration: 0.5s;
+  font-size: 20px;
+}
+a:hover{
+    opacity: 0.5;
+    color:rgb(243, 73, 73);
+}
+.container{
+    max-width:1200px;
+    width:100%;
+}
+.slider-wrapper  .image-list{
+    border: 15px solid #ccc;
+    padding-top: 100px;
+    display: grid;
+    gap: 15px;
+    font-size: 0;
+    overflow-x:auto;
+    scrollbar-width: none;
+    grid-template-columns: repeat(11,1fr);
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+    display: none;
+}
+.slider-wrapper .image-list .image-item{
+    width:320px;
+    height:400px;
+    object-fit : cover;
+}
+.container .slider-scrollbar{
+    height: 24px;
+    width: 100%;
+    display:flex;
+    align-items: center;
+}
+.slider-scrollbar .scrollbar-track{
+    height: 2px;
+    width: 100%;
+    background: #ccc;
+    position: relative;
+    border-radius: 4px;
+}
+.slider-scrollbar .scrollbar-thumb{
+    position: absolute;
+    height: 100%;
+    width: 30%;
+    background: #000;
+    border-radius: inherit;
+    cursor: grab;
+}
+.slider-scrollbar .scrollbar-thumb:active{
+    cursor: grabbing;
+    height: 8px;
+    top: -2px;
+}
+.slider-scrollbar .scrollbar-thumb::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.rightarrow{
+    position: absolute;
+    margin-left: 82%;
+    text-align: right;
+    margin-top: 20%;
+    opacity: 0.5;
+}
+.leftarrow{
+    position: absolute;
+    text-align: left;
+    margin-top: 20%;
+    opacity: 0.5;
+    margin-left: 2%;
+    padding-left: 2px;
+    margin-right: 1px;
+}
+
+.Content{
+    font-family: "Quicksand", sans-serif;
+    font-weight: 0;
+    color:black;
+    padding-left: 10px;
+    padding: 10px;
+    font-size: 13px;
+    background:rgb(181, 174, 174);
+}
+.movier{
+    background-color:#ccc;
+    display: flex;
+    flex-wrap: wrap;
+    gap:65px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    max-width: 1225px;
+}
+.movier img{
+    max-width: 250px;
+    border:15px solid #fff;
+    margin-top: 20px;
+}
+.content2{
+    width: 100%;
+    background-color: #fff;
+    height: 10px;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom: 5%;
+}
+.movier h1{
+    color: azure;
+}
+.movier button{
+    background: crimson;
+    font-size:15px;
+    padding: 10PX;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: aliceblue;
+}
+.page2{
+    background: rgb(224, 106, 106);
+}
+
+.details1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color:coral;
+    padding: 60px;
+}
+.details1 img {
+    width: 300px;
+    margin-right: 800px;
+    border:20px solid #fff ;
+ }
+.details1 .moviedetails{
+    position: absolute;
+    margin-left: 600px;
+}
+.details1 .moviedetails button{
+    padding: 30px;
+}
+span{
+    color:white;
+}
+
+.details2{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color:rgb(131, 153, 198);
+    padding: 60px;
+}
+.details2 img{
+    width: 300px;
+    margin-right:580px;
+    border:20px solid #fff ;
+}
+.moviedetails2{
+    font-family: "Teachers", sans-serif;
+    margin-left: -10rem;
+}
+details2 .moviedetails2{
+    position: absolute;
+}
+.details2 .moviedetails2 button{
+    padding: 30px;
+}
+
+.details3{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color:rgb(131, 153, 198);
+    padding: 60px;
+}
+.details3 img{
+    width: 300px;
+    margin-right:580px;
+    border:20px solid #fff ;
+}
+.moviedetails3{
+    font-family: "Teachers", sans-serif;
+    margin-left: -10rem;
+}
+.details3 .moviedetails3 button{
+    padding: 30px;
+}
+
+.details4{
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    background-color:rgb(131, 153, 198);
+    padding: 60px;
+}
+.details4 img{
+    width: 300px;
+    margin-right:580px;
+    border:20px solid #fff ;
+}
+.moviedetails4{
+    font-family: "Teachers", sans-serif;
+    margin-left: -10rem;
+}
+.details4 .moviedetails4 button{
+    padding: 30px;
+}
+
+
+

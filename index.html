@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EnjoyTicket</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teachers:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const slideButtons = document.querySelectorAll(".slide-button");
+            const imageList = document.querySelector(".image-list");
+            const scrollbarThumb = document.querySelector(".scrollbar-thumb");
+
+            const updateScrollbar = () => {
+                const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+                const scrollLeft = imageList.scrollLeft;
+                const scrollbarWidth = (scrollLeft / maxScrollLeft) * 100;
+                scrollbarThumb.style.width = `${scrollbarWidth}%`;
+            };
+
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                    const direction = button.id === "prev-slide" ? -1 : 1;
+                    const scrollAmount = imageList.clientWidth * direction;
+                    imageList.scrollBy({ left: scrollAmount, behavior: "smooth" });
+                });
+            });
+
+            imageList.addEventListener("scroll", updateScrollbar);
+            window.addEventListener("resize", updateScrollbar);
+            updateScrollbar();
+        });
+    </script>
+</head>
+<body>
+    <div class="page1">
+        <header class="container2">
+            <div class="anchortag">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Languages</a></li>
+                    <li><a href="">MyBookings</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">LogOut</a></li>
+                </ul>
+            </div>
+        </header>
+        <div class="container">
+            <div class="slider-wrapper">
+                <button id="prev-slide" class="slide-button material-symbols-outlined leftarrow">arrow_back_ios</button>
+                <button id="next-slide" class="slide-button material-symbols-outlined rightarrow">arrow_forward_ios</button>
+                <div class="image-list">
+                    <img src="images/image1.jpg" alt="img-1" class="image-item">
+                    <img src="images/image2.jpg" alt="img-2" class="image-item">
+                    <img src="images/image3.jpg" alt="img-3" class="image-item">
+                    <img src="images/image4.jpg" alt="img-4" class="image-item">
+                    <img src="images/image5.jpg" alt="img-5" class="image-item">
+                    <img src="images/image6.jpg" alt="img-6" class="image-item">
+                    <img src="images/image7.jpg" alt="img-7" class="image-item">
+                    <img src="images/image8.jpg" alt="img-8" class="image-item">
+                    <img src="images/image9.jpg" alt="img-9" class="image-item">
+                    <img src="images/image10.jpg" alt="img-10" class="image-item">
+                    <img src="images/image11.jpg" alt="img-11" class="image-item">
+                </div>
+            </div>
+            <div class="slider-scrollbar">
+                <div class="scrollbar-track">
+                    <div class="scrollbar-thumb"></div>
+                </div>
+            </div>
+        </div><br><br>
+        <div>
+            <div class="Content">
+                <h1>NewMovies</h1>
+            </div><br>
+            <div>
+            <div class="movier">
+                <div>
+                    <img src="images/image_12 (1).webp" alt="">
+                    <h1>Price: 12$</h1>
+                    <a href="movie1.html"><button>Buy</button></a>
+                </div>
+                <div>
+                    <img src="images/image_12 (2).webp" alt="">
+                    <h1>Price: 15$</h1>
+                    <a href="movie2.html"><button>Buy</button></a>
+                </div>
+                <div>
+                    <img src="images/image_12 (3).webp" alt="">
+                    <h1>Price: 13$</h1>
+                    <a href="movie3.html"><button>Buy</button></a>
+                </div>
+                <div>
+                    <img src="images/image_12 (4).webp" alt="">
+                    <h1>Price: 17$</h1>
+                    <a href="movie4.html"><button>Buy</button></a>
+                </div>
+                <div>
+                    <img src="images/Movie Poster 15.jpg" alt="">
+                    <h1>price: 15$</h1>
+                    <button>Buy</button>
+                </div>
+                <div>
+                    <img src="images/Movie Poster 103.jpg" alt="">
+                    <h1>price: 18$</h1>
+                    <button>Buy</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div class="content2">
+    
+            </div>
+            <div class="movier2">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Movie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body class="page2">
+    <div class="movie1booking">
+        <header class="container2">
+            <div class="anchortag">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Category</a></li>
+                    <li><a href="">Languages</a></li>
+                    <li><a href="">MyBookings</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">LogOut</a></li>
+                </ul>
+            </div>
+        </header><br>
+            <div class="details4">
+                <img src="images/image_12 (4).webp" alt="">
+                <div class="moviedetails4">
+                    <h1><span>Movie Name:</span> Borderlands</h1><br>
+                    <h2><span>Quantity:</span> 1</h2><br>
+                    <h3><span>Payment Method:</span>: Online</h3><br>
+                    <h3><span>Total Cost = </span> 17$</h3><br>
+                    <button id="placeOrder">Place Order</button><br><br>
+                    <button id="cancelOrder">Cancel order</button>
+                </div>
+            </div>
+    </div>
+    <script>
+        const placeOrderButton = document.getElementById("placeOrder");
+        const cancelOrderButton = document.getElementById("cancelOrder");
+
+        placeOrderButton.addEventListener("click", () => {
+          alert("Order placed successfully!");
+        });
+
+        cancelOrderButton.addEventListener("click", () => {
+          alert("Order cancelled.");
+        });
+    </script>
+</body>
+</html>
